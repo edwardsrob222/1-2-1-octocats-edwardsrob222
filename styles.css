@@ -1,0 +1,21 @@
+.octocat>a>img {
+  height: 350px;
+  display: inline-block;
+  outline: 0.1rem solid black;
+  margin: 20px;
+  float: left;
+
+}
+
+
+
+.authors img {
+  height: 60px;
+  float: left;
+
+
+}
+
+.image-footer {
+  height: 40px;
+}
