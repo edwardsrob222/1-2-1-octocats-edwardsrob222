@@ -1,21 +1,38 @@
+
 .octocat>a>img {
-  height: 350px;
-  display: inline-block;
+  height: 360px;
+  width: 450px;
   outline: 0.1rem solid black;
-  margin: 20px;
-  float: left;
+  margin-left: 100px;
+  position: absolute;
+  top: 10px;
+  bottom: 100px;
 
-}
 
 
+  }
 
-.authors img {
+
+.authors>li>a>img {
   height: 60px;
   float: left;
+  position: relative;
+  bottom: 0px;
+
 
 
 }
 
-.image-footer {
+
+.image-footer>span {
   height: 40px;
+  position: absolute;
+  bottom: 10px;
+
 }
+
+.image-caption>span>a {
+  height: 40px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
