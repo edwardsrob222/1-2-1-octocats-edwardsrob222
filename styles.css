@@ -1,38 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, arial, sans-serif;
+}
+img {
+  width: 100%
+}
+ul {
+  list-style: none;
+  padding: 0px;
+}
 
-.octocat>a>img {
-  height: 360px;
-  width: 450px;
-  outline: 0.1rem solid black;
-  margin-left: 100px;
-  position: absolute;
-  top: 10px;
-  bottom: 100px;
+.octodex {
 
+}
+.octocat {
+  display: inline-block;
+  width: 30%;
+  height: 100%
+}
 
+.octocat > a {
+  display: inline-block;
+  border: solid 1px #CACACA;
 
-  }
-
-
-.authors>li>a>img {
-  height: 60px;
-  float: left;
   position: relative;
-  bottom: 0px;
+  border-radius: 4px;
+}
 
+/*this creates the arrows in border*/
+.octocat > a::after {
+  content: "";
+  height: 0;
+  width: 0;
 
+  border-top: solid 10px #CACACA;
+
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+
+  position: absolute;
+  top: 100%;
+  right: 1%;
+}
+
+.image-number::before {
+  content: "#";
+}
+
+.image-footer {
+  position: relative;
+  border-bottom: solid 1px #CACACA;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.image-footer {
+  /* text-align: right; */
+}
+
+.authors>li>a {
+  display: inline-block;
+  width: 30px;
+}
+.authors img {
+  vertical-align: middle;
 
 }
 
-
-.image-footer>span {
-  height: 40px;
-  position: absolute;
-  bottom: 10px;
-
+.authors {
+  display: inline-block;
+  /* position: absolute;
+  left: 0px; */
 }
 
-.image-caption>span>a {
-  height: 40px;
+.image-caption {
+  display: inline-block;
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  right: 0;
+}
